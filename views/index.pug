@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-12.col-md-offset-3
+        h1.display-4.m-b-2 Test
+        form(method='POST' name='formTest' enctype="multipart/form-data")
+          div.form-group
+            span.resttext
+            label(for='userName')
+            input#name.form-control(type='text', name='userName')
+          div.form-group
+          button.btn.btn-primary.specialBtn(type='submit') Send
+        hr
